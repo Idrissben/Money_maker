@@ -1,2 +1,8 @@
 
+# Ignore jupyter notebooks
+*.ipynb
+*.ipynb_checkpoints
 
+# Ignore all folders with names like "__pycache__" and ".pytest_cache"
+**/__pycache__/
+**/.pytest_cache/
