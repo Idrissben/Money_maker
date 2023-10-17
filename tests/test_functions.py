@@ -15,16 +15,10 @@ class TestStockPredictionFunctions(unittest.TestCase):
     """
     def setUp(self):
         """
-        Set up the unit tests by loading the sample data.
+        Set up the unit tests by loading the sample data. This requires having a sample data file in the same directory.
         """
         # Sample financial data for testing
-        self.financial_data = pd.DataFrame(
-            {
-                "symbol": ["AAPL", "AAPL", "GOOGL", "GOOGL", "MSFT"],
-                "price": [150.0, 155.0, 2500.0, 2600.0, 300.0],
-                # Add other relevant columns here
-            }
-        )
+        self.financial_data = pd.read_csv('sample_data.csv')
 
     def test_calculate_volatility(self):
         """

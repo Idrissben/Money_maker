@@ -6,3 +6,7 @@
 # Ignore all folders with names like "__pycache__" and ".pytest_cache"
 **/__pycache__/
 **/.pytest_cache/
+
+# Ignore the data to avoid loading big files into the repo
+**/data/
+*.csv
